@@ -20,4 +20,4 @@ class Fotografia(models.Model):
     data_fotografia = models.DateTimeField(default=datetime.now(), blank=False)
 
     def __str__(self):
-        return f'Fotografia: {self.nome} / Legenda: {self.legenda}'
+        return self.nome

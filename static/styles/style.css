@@ -382,3 +382,11 @@ table {
     border: 2px solid #7B78E5;
     cursor: pointer;
 }
+input#form-busca {
+    color: #fff;
+    font-weight: bold;
+}
+.btn-none {
+    background: transparent;
+    border: 0;
+}
