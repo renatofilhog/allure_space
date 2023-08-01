@@ -45,7 +45,7 @@ class RegistroForms(forms.Form):
         )
     )
     email = forms.EmailField(
-        label='Senha',
+        label='Email',
         required=True,
         max_length=100,
         widget=forms.EmailInput(

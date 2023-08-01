@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from usuarios.forms import LoginForms
+from usuarios.forms import LoginForms, RegistroForms
 
 def login(request):
     forms = LoginForms()
@@ -8,4 +8,6 @@ def login(request):
     })
 
 def registrar(request):
-    return render(request, 'usuarios/registrar.html')
+    return render(request, 'usuarios/registrar.html', {
+        'forms':RegistroForms()
+    })
